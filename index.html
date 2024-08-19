@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Shobhit - Devloper Portfolio </title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        body{
+            background-color:rgb(2, 2, 46);
+            color:white;
+            font-family: 'Poppins', sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            height:80px;
+            background-color:rgb(41, 41, 106);
+            /* position:fixed; */
+        }
+        nav ul{
+            display: flex;
+            justify-content:center;
+        }
+        nav ul li{
+            list-style:none;
+            margin: 0px 23px;
+        }
+        nav ul li a{
+            list-style:none;
+            color:white;
+        }
+        nav ul li a:hover{
+            color:rgb(172, 172, 232);
+            font-size:1.01rem;
+        }
+        main hr{
+            border: 0;
+            background: #573477;
+            height: 2px;
+            margin: 50px 50px 40px 40px;
+        }
+        .left{
+            font-size:2rem;
+        }
+        .firstSection{
+            display:flex;
+            justify-content: space-around;
+            margin:140px 0;
+        }
+        .firstSection > div{
+            width:40%;
+        }
+        .leftSection{
+            font-size:3rem;
+        }
+        .leftSection .buttons{
+            padding:50px 0;
+        }
+        .leftSection .btn{
+            background: rgb(52 33 92);
+            padding: 12px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+        }       
+        .rightSection img{  
+            width:80%; 
+            height:80%;       
+        }
+        .purple{
+            color:rgb(184, 113, 249);
+        }
+        .text-grey{
+            color:grey;
+        }
+        #element{
+            color:rgb(184, 113, 249); 
+        }
+        .secondSection{
+           max-width:80vw;
+           margin:auto; 
+           height:80vh;
+        }
+        .secondSection h1{
+            font-size:1.9rem;
+            
+        }
+        .secondSection .box{
+            background-color:white;
+            width:77vw;
+            height:2px;
+            margin:56px 0;
+            display:flex;
+        }
+        .secondSection .vertical{
+            height:93px;
+            width:1px;
+            background-color:white;
+            margin:0 180px;
+        }
+        .image-top{
+            width:23px;
+            position:relative;
+            top:-36px;
+            left:2px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top:52px;
+            width: 150px;
+            font-size:20px;
+        }
+        .vertical-desc{
+            position:relative;
+            top: 52px;
+            width: 179px;
+            font-size: 11px;
+            color: grey;
+        }
+        #college-img{
+            top: -44px;
+        }
+        footer{
+            background-color:rgb(10, 10, 21) ;
+            
+
+        }
+        .footer{
+            display:flex;
+            padding:23px 122px; 
+            justify-content:space-between;
+        }
+        .footer ul{
+            list-style:none;
+        }
+        .footer > div{
+            width:233px;
+        }
+        .footer-rights{
+            text-align: center;
+            color:gray;
+            padding: 23px 0;
+
+        }
+    </style> 
+</head>
+<body>
+    
+    <header>
+        
+        <nav class="left">Shobhit's Portfolio</nav>
+        <nav class="right" id="home">
+            <ul>
+                <li><a href="#home">Home</a</li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="\">About</a></li>
+                <li><a href="\">Projects</a></li>
+                <li><a href="\">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" >
+            <div class="leftSection">
+                Hello, My name is <span class="purple">Shobhit</span> 
+                <div>and I'm a passoinate </div><div</div> <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div> 
+                
+            <div class="rightSection">
+                <img src="bg.webp" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="education">
+            <span class="text-grey"> My academic accomplishment...</span>
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class ="image-top" src="student.jpeg" alt="">
+                    <div class="vertical-title">10th Standard</div>
+                    <div class="vertical-desc">
+                        Academic Accomplishment: Secured an impressive 10th-grade percentage of 86.66%.
+                    </div> 
+                </div>
+                <div class="vertical"><img class ="image-top" src="12th.jpeg" alt="">
+                    <div class="vertical-title">12th Standard</div>
+                    <div class="vertical-desc">
+                        Academic Accomplishment: Secured an impressive 12th-grade percentage of 91.33%.
+                    </div> </div>
+                <div class="vertical"><img class ="image-top" id="college-img" src="college.jpeg" alt="">
+                    <div class="vertical-title">B.Tech IT</div>
+                    <div class="vertical-desc">
+                        Bachelor of Technology in Information Technology 
+                        GPA: 7.61
+                    </div> </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Shobhit's devloper portfolio
+            </div>
+            <div class="footer-second"><ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Certifications</li>
+                <li>Contact me</li>
+            </ul></div>
+            <div class="footer-third"><ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Certifications</li>
+                <li>Contact me</li>
+            </ul></div>
+            <div class="footer-fourth"><ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Certifications</li>
+                <li>Contact me</li>
+            </ul></div>
+        </div>
+         <div class="footer-rights">
+            Copyright &#169; shobhitsportfolio.com| All rights reserved
+         </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Devloper', 'Video Editor','Chess Player'],
+      typeSpeed: 50,
+    });
+
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+    
+</body>
+
+</html>
